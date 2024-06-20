@@ -118,7 +118,7 @@ function checkEmptyList() {
     if (tasksList.children.length === 0 && tasks.length === 0) {
         emptyListHTML = `
                 <div id="emptyTask" class="empty-task">
-                    <img src="image/leaf.png" alt="leaf.png" class="img-leaf">
+                    <img src="leaf.png" alt="leaf.png" class="img-leaf">
                     <div class="text-task-empty">Список дел пуст</div>
                 </div>`
         tasksList.insertAdjacentHTML("afterbegin", emptyListHTML)
