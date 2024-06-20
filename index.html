@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>ToDo Приложение</title>
+</head>
+<body>
+    <div class="container">
+            <!-- Голова -->
+            <div class="page-title">ToDo приложение</div>
+            <div class="page-about"><b>список задач на сегодня</b></div>
+            <!-- //Голова -->
+    
+            <!-- Сам список -->
+            <div id="tasksList" class="task-list">
+                <div id="emptyTask" class="empty-task">
+                    <img src="image/leaf.png" alt="leaf.png" class="img-leaf">
+                    <div class="text-task-empty">Список дел пуст</div>
+                </div>
+                
+                <!-- <div class="task">
+                    <div id="taskContent" class="task-content">Купить молоко</div>
+                    <button type="button" data-action="done" class="done">&#10004;</button>
+                    <button type="button" data-action="delete" class="delete">&#10060;</button>
+                </div> -->
+            </div>
+            <!-- //Сам список -->
+    
+            <!-- form add task -->
+            <div class="card-header">Добавить новую задачу</div>
+            <div class="card-body">
+                <form id="form">
+                    <div class="form-group">
+                        <input type="text" class="form-content" id="taskInput" placeholder="Текст задачи" autocomplete="off">
+                        <small id="enterHelp" class="form-text">Что делаем, сколько времени тратим, какой результат получаем.</small>
+                    </div>
+                    <button type="submit" class="form-btn">Добавить</button>
+                </form>
+            </div>
+            <!-- //form add task -->
+    </div>
+</body>
+</html>
